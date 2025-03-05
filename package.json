@@ -1,0 +1,49 @@
+{
+  "name": "laravel-dumpman",
+  "displayName": "Laravel Dumpman",
+  "description": "Quickly add dd() for selected variables.",
+  "version": "1.0.0",
+  "publisher": "Mustafa-Ahmed",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "keywords": [
+    "laravel",
+    "debug",
+    "dd",
+    "helper"
+  ],
+  "icon": "images/Laravel-icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DarshPhpDev/laravel-dumpman"
+  },
+  "activationEvents": [
+    "onCommand:extension.dumpVariable"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.dumpVariable",
+        "title": "Dump Variable"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.dumpVariable",
+        "key": "f1",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p ."
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "typescript": "^4.4.3"
+  }
+}
