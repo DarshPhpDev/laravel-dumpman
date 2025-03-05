@@ -1,6 +1,6 @@
 # Laravel Dumpman 🚀
 
-A simple Laravel helper to insert `dd($variable);` quickly.
+A simple Laravel helper to insert `dd($variable);` quickly in VSCode extension
 
 ![Demo](images/demo.gif)
 
